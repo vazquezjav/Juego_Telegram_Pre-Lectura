@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style_ortografia.css">
+    <script src="script_ortografia.js"></script>
+    <audio id="sonido_fondo" src="../extras/audio_fondo.mp3" loop></audio>
+    <meta charset="UTF-8"/>
+</head>
+
+<body>
+    <div>
+        <button id="comenzar" class="big-button button2 posicion-comenzar" onclick="comenzar()">Comenzar</button>
+    </div>
+    <div id="gramatica_bv" class="ocultar">
+        <div class="container">
+            <div id="container_puntaje">
+                <h2 id="puntaje">Puntaje: </h2>
+            </div>
+            <div class="padre">
+                <div class="hijo">
+                    <img class="imagen" id="imagen" src="../img/ortografia_bv/vacuna.JPG" alt="veleta" />
+                </div>
+                <div class="hijo2">
+                    <label class="tuclase" id="pregunta">A Daniel le pusieron hoy una ______</label>
+                </div>
+            </div>
+            <div id="respuestas">
+                <label class="titulo-respuestas">Selecciona la respuesta correcta ortografia sobre la B y V</label>
+                <form>
+                    <div class="radiobtn">
+                        <input type="radio" id="opcion1" name="price" value="vacuna" />
+                        <label for="opcion1" id="label_opcion1">vacuna</label>
+                    </div>
+    
+                    <div class="radiobtn">
+                        <input type="radio" id="opcion2" name="price" value="bacuna" />
+                        <label for="opcion2" id="label_opcion2">bacuna</label>
+                    </div>
+                </form>
+                
+
+                </br>
+                <button onclick="recibirRespuestas()" class="opcion" >Siguiente</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="ocultar" id="gramatica_gj">
+        <div class="container">
+            <div id="container_puntaje">
+                <div id="container_puntaje">
+                    <h2 id="puntaje_gj">Puntaje: </h2>
+                </div>
+                <div class="padre">
+                    <div class="hijo">
+                        <img class="imagen" id="imagen_gj" src="../img/ortografia_gj/oveja.png" alt="veleta" />
+                    </div>
+                    <div class="hijo2">
+                        <label class="tuclase" id="pregunta_gj">¿Qué animal nos da mucha lana?</label>
+                    </div>
+                </div>
+                <div id="respuestas">
+                    <label class="titulo-respuestas">Selecciona la respuesta correcta ortografia sobre la G y J</label>
+                    <form>
+                        <div class="radiobtn">
+                            <input type="radio" id="opcion1_gj" name="price_gj" value="oveja" />
+                            <label for="opcion1_gj" id="label_opcion1_gj">oveja</label><br>
+                        </div>
+        
+                        <div class="radiobtn">
+
+                            <input type="radio" id="opcion2_gj" name="price_gj" value="ovega" />
+                            <label for="opcion2_gj" id="label_opcion2_gj">ovega</label>
+                        </div>
+                    </form>
+                </br>
+                    <button onclick="recibirRespuestas()" class="opcion">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ocultar" id="gramatica_lly">
+        <div class="container">
+            <div id="container_puntaje">
+                <div id="container_puntaje">
+                    <h2 id="puntaje_lly">Puntaje: </h2>
+                </div>
+                <div class="padre">
+                    <div class="hijo">
+                        <img class="imagen" id="imagen_lly" src="../img/ortografia_lly/grillo.png" alt="veleta" />
+                    </div>
+                    <div class="hijo2">
+                        <label class="tuclase" id="pregunta_lly">En mi pueblo por la noche se escuchan muchos </label>
+                    </div>
+                </div>
+                <div id="respuestas">
+                    <label class="titulo-respuestas">Selecciona la respuesta correcta ortografia sobre la Ll y Y</label>
+                    <form>
+                        <div class="radiobtn">
+                            <input type="radio" id="opcion1_lly" name="price_lly" value="grillos" />
+                            <label id="label_opcion1_lly" for="opcion1_lly">grillos</label>
+                        </div>
+        
+                        <div class="radiobtn">
+                            <input type="radio"  id="opcion2_lly" name="price_lly" value="griyos" />
+                            <label for="opcion2_lly" id="label_opcion2_lly">griyos</label><br>
+                        </div>
+                    </form>
+                </br>
+                    
+                    <button onclick="recibirRespuestas()" class="opcion">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img id="incorrecto" src="../img/sad2.gif" class="ocultar_imagen imagen2"/>
+        <img id="correcto" src="../img/dog_happy.gif" class="ocultar_imagen imagen2" />
+    </div>
+    <div >
+        <audio id="sonido_correcto" src="../extras/correcto.mp3" preload="auto"></audio>
+    </div>
+    <div >
+        <audio id="sonido_incorrecto" src="../extras/sonido_incorrecto.mp3" preload="auto"></audio>
+    </div>
+
+    <div id="validar" class="ocultar">
+        <img id="ganar_imagen" src="../img/ganar.png" alt="ganar" class="ocultar_imagen imagen2">
+        <img id="perder_imagen" src="../img/perder2.png" alt="ganar" class="ocultar_imagen imagen2">
+
+        <button id="regresar" class="ocultar opcion centrar_final" onclick="regresar()"> Menu</button>
+        <button id="reintentar" class="ocultar opcion centrar_final" onclick="reintentar()"> Reintentar</button>
+    </div>
+
+</body>
+
+</html>

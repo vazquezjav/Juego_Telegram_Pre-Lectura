@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style_ortografia.css">
+    <script src="script_ortografia.js"></script>
+    <audio id="sonido_fondo" src="../extras/audio_fondo.mp3" autoplay loop></audio>
+</head>
+
+<body>
+    <div class="container" id="ortografia_bv">
+        <div id="container_puntaje">
+            <h2 id="puntaje">Puntaje: </h2>
+        </div>
+        <div class="padre">
+            <div class="hijo">
+                <img class="imagen" id="imagen" src="../img/ortografia_bv/vacuna.JPG" alt="veleta" />
+            </div>
+            <div class="hijo">
+                <label id="pregunta">A Daniel le pusieron hoy una ....</label>
+            </div>
+        </div>
+        <div id="respuestas">
+            <label>Selecciona la respuesta correcta</label> <br>
+            <input type="radio" class="opcion" id="opcion1" name="price" value="vacuna"/><label id="label_opcion1" >vacuna</label><br>
+            <input type="radio" class="opcion" id="opcion2" name="price" value="bacuna"/><label id="label_opcion2" >bacuna</label><br>
+            <button onclick="recibirRespuestas()">Siguiente</button>
+        </div>
+    </div>
+</body>
+
+</html>
