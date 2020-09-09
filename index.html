@@ -9,25 +9,38 @@
 
 <body>
     <div class="container">
-        <h1>Juegos de Literatura</h1>
+        <h1 class="titulo">Juegos de Literatura</h1>
 
         <div class="container2" id="categorias">
-            <h1>Categorias Principales </h1>
+            
             </br>
-            <img class="libro" src="img/ortografia.png" alt="ortografia" onclick="ortografia()">
-            <img class="libro" src="img/abecedario.jpg" alt="abecedario" onclick="abecedario()">
-            <img class="libro" src="img/cuento.png" alt="Cuento" onclick="cuento()">
+            <img class="libro recuadro img" src="img/ortografia.png" alt="ortografia" onclick="ortografia()">
+            <br>
+            <img class="libro recuadro img" src="img/fondo-abecedario.png" alt="abecedario" onclick="abecedario()">
+            <br>
+            <img class="libro recuadro img" src="img/cuento.png" alt="Cuento" onclick="cuento()">
         </div>
 
         <div class="ocultar" id="tipo_ortografia">
             <img class="libro recuadro" src="img/libro.png" alt="libro" onclick="ortografia_pagina(0)">
+            <br>
             <img class="libro recuadro" src="img/libro.png" alt="libro" onclick="ortografia_pagina(1)">
+            <br>
             <img class="libro recuadro" src="img/libro.png" alt="libro" onclick="ortografia_pagina(2)">
             <div class="recuadro-div" >
                 <h2 class="posicion-texto1 letra" onclick="ortografia_pagina(0)">Letras B y V</h2>
                 <h2 class="posicion-texto2 letra" onclick="ortografia_pagina(1)">Letras G y J</h2>
                 <h2 class="posicion-texto3 letra " onclick="ortografia_pagina(2)">Letras Ll y Y</h2>
             </div>
+        </div>
+        <div class="recuadro-div" >
+            <h2 class="posicion-texto-ortografia letra">Ortografia</h2>
+            <h2 class="posicion-texto-abecedario letra">Abecedario</h2>
+            <h2 class="posicion-texto-cuento letra">Cuentos Infantiles</h2>
+        </div>
+        <div id="volver" class="centrar ocultar">
+            <br>
+            <button class="volver" onclick="volver()">Volver</button>
         </div>
     </div>
 </body>

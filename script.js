@@ -1,6 +1,7 @@
 function ortografia(){
     
     document.getElementById("tipo_ortografia").style.display = "inline";
+    document.getElementById("volver").style.display = "inline";
     document.getElementById("categorias").style.display = "none";
 }
 function ortografia_pagina(n){
@@ -24,4 +25,8 @@ function abecedario(){
 }
 function cuento(){
     location.href="cuento/cuento.html"
+}
+function volver(){
+    location.href ="index.html";
+    
 }

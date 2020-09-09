@@ -1,5 +1,5 @@
-body{
-    background-color: white
+body {
+    background-color: #e2e3d7;
 }
 .grid-33{
     -moz-box-sizing: border-box;
@@ -35,7 +35,7 @@ body{
 
 .card {
     min-height: 400px;
-    background-color: #fff;
+    background-color: #879cc4;
     margin-bottom: 15px;
 }
 .card, .card-module .card-featured {
@@ -102,8 +102,7 @@ footer.entry-meta {
 }
 p{
     margin-bottom: 1.5em;
-  
-
+    text-align: justify;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -113,12 +112,28 @@ p{
     font-weight: 400;
 }
 .container {
-    background-color:  rgb(195, 226, 121);
-    margin: 1rem;
+    /*background-color:  white;
+    margin: 5rem;
     padding: 1rem;
-    border: 2px solid #ccc;
-    /* IMPORTANTE */
+    border: 4px solid rgb(76, 48, 233);
+  
     text-align: center;
+    */
+    background-color: #ffffff;
+    width: 1225px;
+    border: medium solid #bad9f6;
+    border-radius: 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 68px rgba(232,232,232) inset;
+    margin-top: 20px;
+    height: auto;
+    box-shadow: 2px 2px 5px #cccccc;
+    padding: 10px;
+    text-align: center;
+    margin-left: 250;
+
+    
   }
 h3{
     color: #82c3d1;
@@ -137,4 +152,99 @@ h3{
     font-style: inherit;
     font-weight: inherit;
     font-size: 30px;
+    
 }
+.img{
+    width: 550px;
+    height: 350px;
+    text-align: center;
+    align-items: center;
+    border-radius: 200px;
+}
+.titulo-card{
+    color: white;
+    text-align: center;
+}
+.titulo-cuento{
+    text-align: left; 
+    font-family: Comic Sans MS; 
+    font-weight:bold; 
+    font-size: 75px; 
+    color: #FF8000; 
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 6px 6px #414D68, 7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
+    }
+    .cursiva{
+        font-style: oblique;
+    }
+
+    .hijos{
+    
+        padding: 15px;
+        margin: 15px;
+            
+        /* IMPORTANTE */
+        display: inline-block;
+    }
+    .padre {
+        
+        height: 500px;
+        /*IMPORTANTE*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .volver {
+        width: 250px;
+        height: 75px;
+        margin-left: 75px;
+        color: #fff !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: rgb(204, 68, 50);
+        padding: 10px;
+        border-radius: 5px;
+        display: inline-block;
+        border: none;
+        transition: all 0.4s ease 0s;
+        font-size: 25;
+        font-family: ui-serif;
+        margin-top: 0;
+        margin-left: 750;
+        border-radius: 50px;
+    }
+    .volver:hover{
+        background: rgb(188, 143, 188);
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.4s ease 0s;
+      }
+      .volver-home {
+        width: 250px;
+        height: 75px;
+        margin-left: 75px;
+        color: #fff !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: rgb(204, 68, 50);
+        padding: 10px;
+        border-radius: 5px;
+        display: inline-block;
+        border: none;
+        transition: all 0.4s ease 0s;
+        font-size: 25;
+        font-family: ui-serif;
+        border-radius: 50px;
+    }
+    .volver-home:hover{
+        background: rgb(188, 143, 188);
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.4s ease 0s;
+      }
+    .centrar{
+        text-align: center;
+    }
